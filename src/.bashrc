@@ -105,7 +105,7 @@ export EDITOR=/usr/bin/vim
 alias gcd='[[ $(git rev-parse --show-cdup 2> /dev/null) =~ ".." ]] && cd $(git rev-parse --show-cdup)'
 
 # Use an ssh agent to simplify logins to other systems
-source ~/.ssh/ssh-agent-setup.sh
+source ~/bashlib/ssh-agent-setup.sh
 
 # Use ^X instead of ^S to stop control flow so I can reclaim ^S for forward common history search
 stty -ixon
