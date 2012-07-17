@@ -51,11 +51,15 @@ function ssh_clean {
     chmod 600 $f0
 }
 
+function init_ssh_dirs {
+    mkdir -pq ${SSH_CONFIG_HOME}
+}
 
 # Initialize new agent and add authentication
 function start_agent {
 
     echo "Initialising new SSH agent..."
+    init_ssh_dirs
 
     # Start authenticating daemon
     # No authentications set up yet, just starting daemon!
