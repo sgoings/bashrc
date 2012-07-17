@@ -9,6 +9,7 @@ alias gf='git fetch'
 alias gb='git branch'
 alias gd='git diff'
 alias gcp='git cherry-pick'
+alias sublime='nohup ~/Sublime\ Text\ 2/sublime_text &> /dev/null &'
 
 complete -o default -o nospace -F _git_status g
 complete -o default -o nospace -F _git_checkout gco
