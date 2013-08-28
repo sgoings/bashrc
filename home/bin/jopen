@@ -1,0 +1,21 @@
+#!/bin/bash
+
+issue=${1}
+defaultProject='EI'
+
+if [[ ${issue} =~ ^[0-9] ]]; then
+  issue=${defaultProject}-${issue}
+fi
+
+case $(uname) in
+	Darwin )
+		openutil="open"
+		;;
+	Linux )
+		openutil="xdg-open"
+		;;
+	* )
+		;;
+esac
+
+${openutil} https://jira.ecovate.com/browse/${issue} > /dev/null 2>&1

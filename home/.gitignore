@@ -1,0 +1,12 @@
+.DS_Store
+.svn
+*~
+*.swp
+*.rbc
+*.pbc
+*.class
+*_rsa
+.idea
+*.iml
+out/
+tags

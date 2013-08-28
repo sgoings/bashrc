@@ -1,0 +1,12 @@
+#!/bin/bash
+file1=${1}
+file2=${2}
+
+function tarls () {
+  local file=${1}
+  # Run verbose listing through awk to get the columns we care about (permissions, size, file path)
+  tar -tvf ${file} | awk '{ print $1"\t"$3"\t"$6 }'
+}
+
+echo "Diff of tar file listing:"
+diff <(tarls ${file1}) --label=$(basename ${file1}) <(tarls ${file2}) --label=$(basename ${file2}) -u

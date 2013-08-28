@@ -4,9 +4,9 @@
 #
 # Checks authentication environment.
 # If the ssh-agent is not running, starts a new one.
-# 
+#
 # Setup instructions:
-# 
+#
 # 1) For bash and ksh users:
 #
 #    Include the following in your ~/.bashrc or ~/.kshrc:
@@ -15,7 +15,7 @@
 #
 #    Note, The common error is to instead include this command to ~/.bash_profile file.
 #    The authentication method of any subsequent non-login shell sessions
-#    started will not be supplied by the running ssh-agent which 
+#    started will not be supplied by the running ssh-agent which
 #    only calls ~/.bashrc for their shell session setup. The startup
 #    of the login shell session includes a call to ~/.bashrc anyway.
 #
@@ -51,15 +51,11 @@ function ssh_clean {
     chmod 600 $f0
 }
 
-function init_ssh_dirs {
-    mkdir -pq ${SSH_CONFIG_HOME}
-}
 
 # Initialize new agent and add authentication
 function start_agent {
 
     echo "Initialising new SSH agent..."
-    init_ssh_dirs
 
     # Start authenticating daemon
     # No authentications set up yet, just starting daemon!
@@ -98,12 +94,12 @@ if [ -f "$SSH_ENV" ]; then
     if [ $ierr == "0" ]; then
 	echo > /dev/null
     else
-	# If not initialize new agent and 
+	# If not initialize new agent and
 	# add authentication
 	start_agent;
     fi
 else
-    start_agent;    
+    start_agent;
 fi
 
 # Clean localhost entry in the known host file

@@ -1,0 +1,16 @@
+#!/bin/bash
+file1=${1}
+file2=${2}
+
+function jarls () {
+  local file=${1}
+  # Run verbose listing through awk to get the columns we care about (permissions, size, file path)
+  jar -tvf ${file} | awk '{ print $1"\t"$8 }'
+}
+
+echo "Diff of jar file listing:"
+diff <(jarls ${file1}) --label=$(basename ${file1}) <(jarls ${file2}) --label=$(basename ${file2}) -u
+
+echo -e "\nDeep compatibility report:"
+reportpath="./compatability.html"
+japi-compliance-checker -open -report-path ${reportpath} ${@}
