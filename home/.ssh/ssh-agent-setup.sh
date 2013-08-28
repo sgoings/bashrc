@@ -41,9 +41,9 @@ function ssh_clean {
     cat /dev/null > $f1
 
     while read host line; do
-	if [ $host != "localhost" ]; then
-	    echo $host $line >> $f1
-	fi
+    if [ $host != "localhost" ]; then
+        echo $host $line >> $f1
+    fi
     done < $f0
 
     mv $f1 $f0
@@ -92,11 +92,11 @@ if [ -f "$SSH_ENV" ]; then
     ps ${SSH_AGENT_PID} > /dev/null || ierr=1
 
     if [ $ierr == "0" ]; then
-	echo > /dev/null
+       echo > /dev/null
     else
-	# If not initialize new agent and
-	# add authentication
-	start_agent;
+    # If not initialize new agent and
+    # add authentication
+    start_agent;
     fi
 else
     start_agent;

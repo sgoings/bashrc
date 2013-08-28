@@ -37,4 +37,3 @@ if [[ -d ${HOME}/.bashrc.d ]]; then
   unset dotd
 fi
 
-alias homeshick="$HOME/.homesick/repos/homeshick/home/.homeshick"

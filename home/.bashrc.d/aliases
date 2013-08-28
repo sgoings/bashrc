@@ -6,4 +6,4 @@ alias l='ls -CF'
 
 alias c='clear'
 
-# vim: set ft=sh ts=2 sw=2 tw=0 :
+alias homeshick="$HOME/.homesick/repos/homeshick/home/.homeshick"
