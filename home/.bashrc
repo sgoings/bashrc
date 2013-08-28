@@ -31,9 +31,9 @@ source ${HOME}/.bash_${PLATFORM}
 
 # Source the rest of the things.
 if [[ -d ${HOME}/.bashrc.d ]]; then
-  while read dotd; do
-    source "${dotd}"
-  done < <(find ${HOME}/.bashrc.d/ -type f -o -type l)
-  unset dotd
+  files=$(find ${HOME}/.bashrc.d/ -type f -o -type l)
+  for file in ${files}; do
+    source "${file}"
+  done
 fi
 
