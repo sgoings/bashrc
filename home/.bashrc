@@ -21,10 +21,6 @@ export HOMESICK="${HOME}/.homesick/repos"
 homeshick="${HOME}/.homeshick"
 [[ -x ${homeshick} ]] && alias homesick=${homeshick}
 
-# Source my functions and start setting up my PATH
-source ${HOME}/bin/path-manip.sh
-path-prepend ${HOME}/bin
-
 # Source platform dependent stuff first to help with paths, etc.
 source ${HOME}/.bash_functions
 source ${HOME}/.bash_${PLATFORM}

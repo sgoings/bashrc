@@ -6,5 +6,3 @@ eval "$(SHELL=/bin/sh lesspipe)"
 
 # Mix the hub subcommands in with git on linux
 smart-alias git 'hub'
-
-# vim: set ft=sh ts=2 sw=2 tw=0 :

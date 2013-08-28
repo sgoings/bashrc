@@ -13,5 +13,3 @@ function emptytrash {
 
 # Recursively delete `.DS_Store` files
 alias dsclean="find . -type f -name '*.DS_Store' -ls -delete"
-
-# vim: set ft=sh ts=2 sw=2 tw=0 :
