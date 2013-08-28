@@ -34,6 +34,3 @@ if [[ "${PLATFORM}" == "darwin" ]]; then
     brew install $(cat ${brew_installed})
   }
 fi
-
-# vim: set ft=sh ts=2 sw=2 tw=0 :
-# sublime: syntax Packages/ShellScript/Shell-Unix-Generic.tmLanguage

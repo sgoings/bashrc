@@ -58,5 +58,3 @@ function _git_cd {
 }
 
 complete -o nospace -F _git_cd gcd
-
-# vim: set ft=sh ts=2 sw=2 tw=0 :

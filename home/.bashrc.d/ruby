@@ -3,5 +3,3 @@ if [[ -d ${HOME}/.rbenv  ]]; then
   path-prepend ${HOME}/.rbenv/bin
   eval "$(rbenv init -)"
 fi
-
-# vim: set ft=sh ts=2 sw=2 tw=0 :

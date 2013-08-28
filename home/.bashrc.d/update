@@ -65,5 +65,3 @@ function ssh-init-home {
   ssh-copy-id ${target}
   ssh -At ${target} "$(declare -f updatehome); updatehome; bash -l"
 }
-
-# vim: set ft=sh ts=2 sw=2 tw=0 :

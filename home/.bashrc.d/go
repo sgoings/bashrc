@@ -12,5 +12,3 @@ if which go &> /dev/null; then
   path-append ${HOME}/GoWorkspace/bin
   path-append ${GOROOT}/bin
 fi
-
-# vim: set ft=sh ts=2 sw=2 tw=0 :

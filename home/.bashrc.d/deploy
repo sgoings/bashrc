@@ -7,5 +7,3 @@ complete -F _deploy_alias deploy
 alias deployme='deploy.sh $(whoami)'
 make-completion-wrapper _deploy _deployme deploy.sh $(whoami)
 complete -F _deployme deployme
-
-# vim: set ft=sh ts=2 sw=2 tw=0 :

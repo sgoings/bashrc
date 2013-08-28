@@ -25,5 +25,3 @@ which brew &> /dev/null && brew_prefix=$( brew --prefix )
 if $(which grc &>/dev/null); then
   source ${brew_prefix}/etc/grc.bashrc
 fi
-
-# vim: set ft=sh ts=2 sw=2 tw=0 :
