@@ -12,8 +12,6 @@ case ${PLATFORM} in
     ;;
   *)
     # Setup ssh agent.
-    if [[ -z $SSH_AUTH_SOCK ]]; then
-      source ${HOME}/.ssh/ssh-login
-    fi
+    source ${HOME}/.ssh/ssh-login
     ;;
 esac
