@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 homesick_repos="$HOME/.homesick/repos"
 homeshick_path="${homesick_repos}/homeshick"
 
