@@ -14,9 +14,6 @@
 [hub]
   protocol = https
 
-[credential]
-  helper = osxkeychain
-
 [alias]
   promote = ~/bin/git-promote
   wtf     = ~/bin/git-wtf
