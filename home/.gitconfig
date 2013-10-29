@@ -14,6 +14,10 @@
 [hub]
   protocol = https
 
+[rerere]
+  enabled = true
+  autoupdate = true
+
 [alias]
   promote = ~/bin/git-promote
   wtf     = ~/bin/git-wtf
