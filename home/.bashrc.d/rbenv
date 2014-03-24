@@ -1,5 +1,11 @@
-if [[ ! -d ${HOME}/.rbenv ]]; then
+export RBENV_HOME=${HOME}/.rbenv
+
+if [[ ! -d ${RBENV_HOME} ]]; then
   git clone https://github.com/sstephenson/rbenv.git ${HOME}/.rbenv
+fi
+
+if [[ ! -d ${RBENV_HOME}/plugins/ruby-build ]]; then
+  git clone https://github.com/sstephenson/ruby-build.git ${HOME}/.rbenv/plugins/ruby-build
 fi
 
 export PATH="$HOME/.rbenv/bin:$PATH"
