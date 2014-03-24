@@ -25,7 +25,7 @@ stty stop ^X
 export HOMESICK="${HOME}/.homesick/repos"
 
 # Homes[h]ick
-source $HOME/.homesick/repos/homeshick/homeshick.sh
+source ${HOME}/.homesick/repos/homeshick/homeshick.sh
 alias homesick=homeshick
 
 # Source platform dependent stuff first to help with paths, etc.
