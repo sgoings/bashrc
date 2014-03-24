@@ -21,13 +21,16 @@ export PLATFORM=$(uname ${uname_flag} | tr "[:upper:]" "[:lower:]")
 stty -ixon
 stty stop ^X
 
-# Setup homesick stuff.
+# Homesick
 export HOMESICK="${HOME}/.homesick/repos"
+
+# Homes[h]ick
+source $HOME/.homesick/repos/homeshick/homeshick.sh
+alias homesick=homeshick
 
 # Source platform dependent stuff first to help with paths, etc.
 source ${HOME}/.bash_functions
 source ${HOME}/.bash_${PLATFORM}
-source $HOME/.homesick/repos/homeshick/homeshick.sh
 
 # Source the rest of the things.
 if [[ -d ${HOME}/.bashrc.d ]]; then
