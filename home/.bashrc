@@ -30,6 +30,7 @@ homeshick="${HOME}/.homeshick"
 # Source platform dependent stuff first to help with paths, etc.
 source ${HOME}/.bash_functions
 source ${HOME}/.bash_${PLATFORM}
+source $HOME/.homesick/repos/homeshick/homeshick.sh
 
 # Source the rest of the things.
 if [[ -d ${HOME}/.bashrc.d ]]; then
