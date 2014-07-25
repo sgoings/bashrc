@@ -7,3 +7,9 @@ Installing
 ----------
 
     wget -qO- https://raw.github.com/sgoings/bashrc/master/setup.sh | bash
+
+Manually
+--------
+
+    ${HOME}/.homesick/repos/homeshick/bin/homeshick refresh
+    ${HOME}/.homesick/repos/homeshick/bin/homeshick link
