@@ -7,5 +7,6 @@ if [[ ! -d ${homeshick_path} ]]; then
 fi
 
 if [[ ! -d "${homesick_repos}/$(basename ${bashrc_repo})" ]]; then
-  yes | "${homeshick_path}/bin/homeshick" clone ${bashrc_repo}
+  source ${homeshick_path}/homeshick.sh
+  yes | homeshick clone ${bashrc_repo}
 fi
