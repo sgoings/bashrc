@@ -1,0 +1,2 @@
+alias docker="sudo docker"
+alias fig="sudo fig"
