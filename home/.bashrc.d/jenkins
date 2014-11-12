@@ -9,5 +9,5 @@ function download-jenkins-cli {
 function builder {
   download-jenkins-cli
 
-  java -jar "${jenkins_cli}" -s "https://builder.ecovate.com"
+  java -jar "${jenkins_cli}" -s "https://builder.ecovate.com" ${@}
 }
