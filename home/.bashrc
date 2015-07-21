@@ -24,6 +24,10 @@ stty stop ^X
 # Homesick
 export HOMESICK="${HOME}/.homesick/repos"
 
+# Homes[h]ick
+source ${HOME}/.homesick/repos/homeshick/homeshick.sh
+alias homesick=homeshick
+
 # Source platform dependent stuff first to help with paths, etc.
 source ${HOME}/.bash_functions
 source ${HOME}/.bash_${PLATFORM}
