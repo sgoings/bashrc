@@ -8,9 +8,6 @@ shell_options="\
   histappend \
   extglob \
   cdspell \
-  dirspell \
-  globstar \
-  autocd \
 "
 
 if ! shopt -qs ${shell_options}; then
