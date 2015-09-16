@@ -5,3 +5,4 @@ alias lla='ls -lA'
 alias l='ls -CF'
 
 alias c='clear'
+alias tree='tree -l'
