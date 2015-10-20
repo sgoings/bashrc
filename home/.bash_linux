@@ -1,2 +1,4 @@
+export VAGRANT_DEFAULT_PROVIDER=vmware_workstation
+
 # Pretty much never makes sense to run service without sudo
 [[ -e /usr/sbin/service ]] && alias service='sudo service'
