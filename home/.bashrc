@@ -1,5 +1,5 @@
 # Set some super basic stuff
-export PATH="${HOME}/bin:${PATH}"
+export PATH="${HOME}/bin:${HOME}/.captain/bin:${PATH}"
 export EDITOR="vim"
 export VISUAL="${EDITOR}"
 export LANG=en_US.UTF-8
@@ -39,4 +39,3 @@ if [[ -d ${HOME}/.bashrc.d ]]; then
     source "${file}"
   done
 fi
-
