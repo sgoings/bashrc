@@ -34,7 +34,7 @@ source ${HOME}/.bash_${PLATFORM}
 
 # Source the rest of the things.
 if [[ -d ${HOME}/.bashrc.d ]]; then
-  files=$(find ${HOME}/.bashrc.d/ -type f -o -type l)
+  files=$(find ${HOME}/.bashrc.d -type f -o -type l)
   for file in ${files}; do
     source "${file}"
   done
