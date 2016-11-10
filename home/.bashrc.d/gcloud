@@ -1,1 +1,5 @@
+# brew install google-cloud-sdk
+
 export CLOUDSDK_PYTHON=/usr/bin/python
+
+export PATH="${PATH}:/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin/"
