@@ -1,6 +1,6 @@
 [user]
   name = Seth Goings
-  email = sethgoings@gmail.com
+  email = segoings@microsoft.com
 
 [github]
   user = sgoings
@@ -36,7 +36,7 @@
 
   # Logs
   plog  = log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
-  logme = log --author='Doug.*Borg'
+  logme = log --author='Seth.*Goings'
   blog  = log --graph --decorate --pretty=oneline --abbrev-commit
 
   # Safeguards
